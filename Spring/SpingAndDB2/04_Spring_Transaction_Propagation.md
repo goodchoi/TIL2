@@ -229,8 +229,6 @@ org.springframework.transaction.UnexpectedRollbackException: Transaction rolled 
 
 
 
-
-
 #### 동작흐름
 
 <img title="" src="IMG/rollbackflow.png" alt="" data-align="center" width="560">
