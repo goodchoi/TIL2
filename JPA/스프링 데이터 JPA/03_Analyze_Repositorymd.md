@@ -3,9 +3,9 @@
 > 목차
 > 
 > - [03 스프링 데이터 JPA 구현체 분석](#03-스프링-데이터-JPA-구현체-분석)
->   - [save()](#save()--)
+>   - [save()](#save--)
 >   
->   - [merge()](#merge()--)
+>   - [merge()](#merge--)
 >   
 >   - [Persistable 구현](#persistable()---)
 
