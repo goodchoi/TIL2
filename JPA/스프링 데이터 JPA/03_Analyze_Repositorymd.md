@@ -7,7 +7,7 @@
 >   
 >   - [merge()](#merge--)
 >   
->   - [Persistable 구현](#persistable()---)
+>   - [Persistable 구현](#persistable-구현---)
 
 # 03 스프링 데이터 JPA 구현체 분석
 
@@ -26,7 +26,7 @@ public class SimpleJpaRepository<T, ID> implements JpaRepositoryImplementation<T
 + 이미 구현체에 트랜잭션을 붙여주기 때문이다. 클래스 레벨에서 `readOnly = true` 를 한다는 뜻은 저장,수정,삭제 에서는 `@Transactional` (default -> false)를 붙이겠다는 뜻이다.
 + 만약 서비스에서 트랜잭셔을 먼저 수행할 경우, 트랜잭션 전파로 내부 트랜잭션이 될것이다.
 
-#### save()
+#### save
 
 ```java
     @Transactional
@@ -64,7 +64,7 @@ public class SimpleJpaRepository<T, ID> implements JpaRepositoryImplementation<T
 
 
 
-#### merge()
+#### merge
 
 + 기본편에서도 배웠지만 merge는 그냥 일반 수정이랑은 약간 다르다. merge는 어이없게 DB 에 select문을 호출해서 값을 확인하는 작업이 추가된다. -> 매우 비효율적
 
